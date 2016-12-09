@@ -19,4 +19,3 @@ getData <- function(){
         sub <- grep("^[1|2]/2/2007;*", textdata)
         mydata <- read.table(datafile, sep=";", header=TRUE, quote= "", strip.white=TRUE, stringsAsFactors = FALSE, na.strings= "?")
 }
-getData()
