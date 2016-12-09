@@ -1,6 +1,5 @@
 # plot1.R
-setwd("Coursera/exploratory_data/ExData_Plotting1/")
-library(sqldf)
+# setwd("Coursera/exploratory_data/ExData_Plotting1/")
 source("get_data.R")
 # load the data
 data1 <- "1/2/2007"
