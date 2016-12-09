@@ -1,3 +1,4 @@
+library(reshape2)
 getData <- function(){
         # File with data
         datafile <- "household_power_consumption.txt"
@@ -12,5 +13,10 @@ getData <- function(){
                 }
                 unzip(filename)
         }
+        
+        # extract the data and create the data.frame
+        textdata <- readLines(datafile)
+        sub <- grep("^[1|2]/2/2007;*", textdata)
         mydata <- read.table(datafile, sep=";", header=TRUE, quote= "", strip.white=TRUE, stringsAsFactors = FALSE, na.strings= "?")
 }
+getData()
